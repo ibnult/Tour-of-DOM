@@ -27,15 +27,10 @@
     </main>
     <script src="js/dom.js"></script>
     <script>
-        const student = {
-            name: "John Doe",
-            age: 20,
-            course: "Web Development",
-            study:function(time) {
-                console.log(`Studying for ${time} hours.`);
-            }
-        };
-        console.log("Hello, inline script, from index.html!");
+        const liCollection = document.getElementsByTagName('li');
+        //console.log(liCollection);
+        for (const li of liCollection) {
+console.log(li.innerText);        }
     </script>
 </body>
 </html>
