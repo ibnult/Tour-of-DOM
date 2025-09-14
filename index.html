@@ -11,26 +11,51 @@
             color: #5202ff;
             margin: 10px 0;
         }
+        #fruits-title{
+            color: black;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to the Tour of the DOM</h1>
+        <p>This is a simple demonstration of how to manipulate the Document Object Model (DOM) using JavaScript.</p>
     </header>
     <main>
-        <h1>My awesome DOM de baba</h1>
+        <section>
+            <h1>My awesome DOM de baba</h1>
         <ul>
             <li>Jalali Set</li>
             <li>Jalali Date</li>
             <li>Jalali Calendar</li>
         </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">fruits i like</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+        </ul>
+        </section>
+        <section>
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li>DUBAI</li>
+                <li>Kashmir</li>
+                <li>Russia</li>
+            </ul>
+        </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         //console.log(liCollection);
         for (const li of liCollection) {
-console.log(li.innerText);        }
+            //console.log(li.innerText);
+        }
+        const places =document.getElementsByClassName('important-places');
+        console.log(places);
     </script>
 </body>
 </html>
